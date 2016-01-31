@@ -1,3 +1,3 @@
 # Website
 Development of the new EGSwiss website.
-*Updating this to test GitHub.*
+Updating this to test GitHub.
