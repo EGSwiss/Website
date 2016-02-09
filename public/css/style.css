@@ -1,5 +1,6 @@
 /* Custom CSS in here */
-html, body{ background-color: #F1F1F1; }
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
 
 #header { margin: 15px 0; display: none; }
 .container { padding-top: 50px; width: 90%; }
