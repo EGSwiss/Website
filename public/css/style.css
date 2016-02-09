@@ -36,6 +36,12 @@ html, body{ background-color: #F1F1F1; }
 
 @media all and (max-width: 767px){
 
+#header { margin: 0px !impoartnat; }
+.navbar { margin: 0px; }
+.navbar-default { margin: 0px; }
+.panelLeft { width: 100%; padding: 0px; margin: 0px; }
 .container { width: 100%; padding: 0px; }
+.panelRightUp { display: none; }
+.panelRightDown { display: none; }
 
 }
