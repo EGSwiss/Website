@@ -10,42 +10,86 @@ html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
 
 #navbar { padding-left: 0px; }
 #navbar li:hover { background-color: #444444 !important; }
-.navbar-default { background-image: none; background-color: #2F2F2F; border-radius: none; box-shadow: none; }
-.navbar-default .container-fluid { padding-left: 0px; }
-.navbar-default a { color: #FFFFFF !important; }
-.navbar-default .active { background-color: #CC181E !important; }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover { background-color: #CC181E; color: #fff;}
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a { background-image: none; }
-.navbar-brand  img { width: 115px; }
-.navbar-brand { height: auto; padding: 5px; margin-left: 15px; }
-
-/* Content Boxes */
-.panelLeft { width: 70%; float: left; }
-.panelRightUp { width: 29%; float: right; }
-.panelRightDown { width: 29%; float: right; }
-
-#panelRightUpContent { font-size: 1.5em; }
-.topHeader { background-color: #2F2F2F: color: #FFFFFF }
-
-@media all and (min-width: 768px){
-
-.navbar-brand { display: none !important; }
-.header { display: block; }
-.panelLeft { min-height: 700px; }
-.panelRightUp { min-height: 100px; }
-.panelRightDown {  min-height: 580px; }
-
-
+.navbar-default {
+  background-image: none;
+  background-color: #2F2F2F;
+  border-radius: none;
+  box-shadow: none;
+}
+.navbar-default .container-fluid {
+  padding-left: 0px;
+}
+.navbar-default a {
+  color: #FFFFFF !important;
+}
+.navbar-default .active {
+  background-color: #CC181E !important;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  background-color: #CC181E; color: #fff;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
+  background-image: none;
+}
+.navbar-brand  img {
+  width: 115px;
+}
+.navbar-brand {
+  height: auto;
+  padding: 5px;
+  margin-left: 15px;
 }
 
+/* Content Boxes */
+.panelLeft {
+  width: 70%;
+  float: left;
+}
+.panelRightUp {
+  width: 29%;
+  float: right;
+}
+
+.panelRightDown {
+  width: 29%;
+  float: right;
+}
+
+#panelRightUpContent {
+  font-size: 1.5em;
+}
+.topHeader {
+  background-color: #2F2F2F:
+  color: #FFFFFF
+}
+
+/** Media Queries **/
+@media screen and (min-width: 768px){
+  .navbar-brand { display: none !important; }
+  .header { display: block; }
+  .panelLeft { min-height: 700px; }
+  .panelRightUp { min-height: 100px; }
+  .panelRightDown {  min-height: 580px; }
+}
+
+/* KLEINER ALS 767 dann wird das gemacht:  */
 @media all and (max-width: 767px){
-
-#header { margin: 0px !impoartnat; }
-.navbar { margin: 0px; }
-.navbar-default { margin: 0px; }
-.panelLeft { width: 100%; padding: 0px; margin: 0px; }
-.container { width: 100%; padding: 0px; }
-.panelRightUp { display: none; }
-.panelRightDown { display: none; }
-
+  #header { margin: 0px !impoartnat; }
+  .navbar { margin: 0px; }
+  .navbar-default { margin: 0px; }
+  .panelLeft { width: 100%; padding: 0px; margin: 0px; }
+  .container { width: 100%; padding: 0px; }
+  .panelRightUp {
+    margin: 2.5%;
+    float: left;
+    width: 45%;
+  }
+  .panelRightDown {
+    margin: 2.5%;
+    float: left;
+    width: 45%;
+  }
+  .clear {
+    clear: both;
+  }
 }
