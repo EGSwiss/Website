@@ -5,6 +5,24 @@ html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
 .header { margin: 15px 0; display: none; }
 .container { padding-top: 50px; width: 90%; }
 
+#topHeader a:link {
+    color: #FFF !important;
+    text-decoration: underline !important;
+}
+#topHeader a:visited {
+    color: #FFF !important;
+    text-decoration: underline !important;
+}
+#topHeader a:hover {
+    color: #FFF !important;
+    text-decoration: underline !important;
+    font-weight: bold;
+}
+#topHeader a:active {
+    color: #FFF !important;
+    text-decoration: underline !important;
+}
+
 /* Gray line over the menu so it looks like on the EGS forum. */
 .grayLine { width: 100%; background-color: #444444; height: 5px; }
 
@@ -41,6 +59,13 @@ html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
 }
 
 /* Content Boxes */
+#topHeader {
+  color: #FFF;
+  background-color: #2F2F2F;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
 .panelLeft {
   width: 70%;
   float: left;
@@ -57,10 +82,6 @@ html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
 
 #panelRightUpContent {
   font-size: 1.5em;
-}
-.topHeader {
-  background-color: #2F2F2F:
-  color: #FFFFFF
 }
 
 /** Media Queries **/

@@ -44,7 +44,6 @@ var egswiss = angular.module('egswiss', ['ui.router', "home", "games", "contact"
 
             var currentState = state.name.split(".")[0];
             var val = "#navigationItem-" + currentState;
-            console.log(val);
             $("#navbar ul li").each(function(li){
                 $("li").removeClass("active");
             });
