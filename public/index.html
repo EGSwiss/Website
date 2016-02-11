@@ -3,31 +3,37 @@
 	<head>
 		<title>EGSwiss</title>
 
+		<meta charset="utf-8"></meta>
+
 		<meta name="description" content="EGSwiss is a swiss gaming community. From gamers for gamers." />
 		<meta name="keywords" content="swiss, switzerland, schweiz, gaming, games, deutsch, community, group, game, teamspeak, team" />
 		<meta name="author" content="metatags generator">
 		<meta name="robots" content="index, follow">
 		<meta name="revisit-after" content="7 days">
 
-		<link rel="stylesheet" href="./lib/Bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="./lib/Bootstrap/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="./lib/Bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./lib/Bootstrap/css/bootstrap-theme.min.css">
 
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 	</head>
 
-	<body>
+	<body ng-app="egswiss">
 
-	      <div class="container">
+			<div class="topHeader">
+				test
+			</div>
+
+      <div class="container">
 
 		  <!-- Header -->
-		  <div id="header">
-				<div class="headerLogo">
-					<img src="images/egsLogo.png"></img>
-				</div>
-		  </div>
-		  
-	      <!-- Static navbar -->
-	      <nav class="navbar navbar-default">
+			  <div class="header">
+					<div class="headerLogo">
+						<img src="images/egsLogo.png"></img>
+					</div>
+			  </div>
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
 		  <div class="grayLine"></div>
 	        <div class="container-fluid">
 	          <div class="navbar-header">
@@ -41,42 +47,53 @@
 	          </div>
 	          <div id="navbar" class="navbar-collapse collapse">
 	            <ul class="nav navbar-nav">
-	              <li class="active"><a href="#">Home</a></li>
-	              <li><a href="#">Games</a></li>
-	              <li><a href="#">Social Network</a></li>
-				  <li><a href="#">Team</a></li>
-				  <li><a href="#">Kontakt</a></li>
+	              <li id="navigationItem-home"><a ui-sref="home">Home</a></li>
+	              <li id="navigationItem-games"><a ui-sref="games">Games</a></li>
+	              <li id="navigationItem-socialNetwork"><a ui-sref="socialNetwork">Social Network</a></li>
+							  <li id="navigationItem-team"><a ui-sref="team">Team</a></li>
+							  <li id="navigationItem-contact"><a ui-sref="contact">Kontakt</a></li>
 	            </ul>
 	          </div>
 	        </div>
 	      </nav>
-		  
-		  <div class="panelLeft panel panel-default">
-			  <div class="panel-body">
-				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
 
-				Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
 
-				Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
+				<div ng-controller="mainController" id="mainContent" class="content">
 
-				Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-			  </div>
-		  </div>
-		  <div class="panelRightUp panel panel-default">
-			  <div class="panel-body">
-				TeamSpeak IP
-			  </div>
-		  </div>
-		  <div class="panelRightDown panel panel-default">
-			  <div class="panel-body">
-				TeamSpeak Overview
-			  </div>
-		  </div>
+					<div ui-view>
+
+						<!-- NG-VIEW -->
+
+					</div>
+
+
+				  <div class="panelRightUp panel panel-default">
+					  <div class="panel-body">
+						TeamSpeak IP
+						<span id="panelRightUpContent">
+							ts.egswiss.ch:6000
+						</span>
+					  </div>
+				  </div>
+				  <div class="panelRightDown panel panel-default">
+					  <div class="panel-body">
+						TeamSpeak Overview
+					  </div>
+				  </div>
+
+				</div>
 
 	    </div>
 			<div id="scripts">
 				<script src="./lib/JQuery/js/jquery-1.11.3.min.js"></script>
 		    	<script src="./lib/Bootstrap/js/bootstrap.min.js"></script>
+		    	<script src="./lib/angular/angular/angular.min.js"></script>
+					<script src="./lib/angular/route/angular-route.min.js"></script>
+					<script src="./js/views/mainController.js"></script>
+					<script src="./js/views/gamesController.js"></script>
+					<script src="./js/views/contactController.js"></script>
+					<script src="./js/views/teamController.js"></script>
+					<script src="./js/views/socialNetworkController.js"></script>
 				<script src="./js/main.js"></script>
 			</div>
 	</body>

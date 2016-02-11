@@ -2,11 +2,11 @@
 @import url(https://fonts.googleapis.com/css?family=Questrial);
 html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
 
-#header { margin: 15px 0; display: none; }
+.header { margin: 15px 0; display: none; }
 .container { padding-top: 50px; width: 90%; }
 
 /* Gray line over the menu so it looks like on the EGS forum. */
-.grayLine { width: 100%; background-color: #444444; height: 5px; } 
+.grayLine { width: 100%; background-color: #444444; height: 5px; }
 
 #navbar { padding-left: 0px; }
 #navbar li:hover { background-color: #444444 !important; }
@@ -24,10 +24,13 @@ html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
 .panelRightUp { width: 29%; float: right; }
 .panelRightDown { width: 29%; float: right; }
 
+#panelRightUpContent { font-size: 1.5em; }
+.topHeader { background-color: #2F2F2F: color: #FFFFFF }
+
 @media all and (min-width: 768px){
 
 .navbar-brand { display: none !important; }
-#header { display: block; }
+.header { display: block; }
 .panelLeft { min-height: 700px; }
 .panelRightUp { min-height: 100px; }
 .panelRightDown {  min-height: 580px; }
