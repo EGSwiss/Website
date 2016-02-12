@@ -1,5 +1,12 @@
 /* Custom CSS in here */
-@import url(https://fonts.googleapis.com/css?family=Questrial);
+
+@font-face {
+  font-family: 'Questrial';
+  src: 
+		local('Questrial');
+		url('Questrial-Regular.ttf');
+}
+
 html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
 
 .header { margin: 15px 0; display: none; }
@@ -68,7 +75,7 @@ html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
 
 /* Content Boxes */
 #topHeader {
-  color: #FFF;
+  color: #444444;
   background-color: #2F2F2F;
   padding: 8px;
   font-size: 1.2em;
