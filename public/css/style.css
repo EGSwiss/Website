@@ -1,5 +1,15 @@
 /* Custom CSS in here */
 
+<<<<<<< HEAD
+=======
+@font-face {
+  font-family: 'Questrial';
+  src: 
+		local('Questrial');
+		url('Questrial-Regular.ttf');
+}
+
+>>>>>>> origin/Development
 html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
 
 
@@ -74,7 +84,7 @@ input::-moz-focus-inner {   border: 0; }
 
 /* Content Boxes */
 #topHeader {
-  color: #FFF;
+  color: #444444;
   background-color: #2F2F2F;
   padding: 8px;
   font-size: 1.2em;
