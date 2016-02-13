@@ -1,26 +1,32 @@
 /* Custom CSS in here */
-@import url(https://fonts.googleapis.com/css?family=Questrial);
+
 html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
+
 
 .header { margin: 15px 0; display: none; }
 .container { padding-top: 50px; width: 90%; }
 
+input::-moz-focus-inner {   border: 0; }
 #topHeader a:link {
     color: #FFF !important;
     text-decoration: underline !important;
+  outline:0;
 }
 #topHeader a:visited {
     color: #FFF !important;
     text-decoration: underline !important;
+  outline:0;
 }
 #topHeader a:hover {
     color: #FFF !important;
     text-decoration: underline !important;
     font-weight: bold;
+  outline:0;
 }
 #topHeader a:active {
     color: #FFF !important;
     text-decoration: underline !important;
+  outline:0;
 }
 .image {
   height: 150px;
@@ -92,6 +98,7 @@ html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
   font-size: 1.5em;
 }
 
+
 /** Media Queries **/
 @media screen and (min-width: 768px){
   .navbar-brand { display: none !important; }
@@ -103,8 +110,8 @@ html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
 
 /* KLEINER ALS 767 dann wird das gemacht:  */
 @media all and (max-width: 767px){
-  #header { margin: 0px !impoartnat; }
-  .navbar { margin: 0px; }
+  #header { margin: 0; }
+  .navbar { margin: 0; }
   .navbar-default { margin: 0px; }
   .panelLeft { width: 100%; padding: 0px; margin: 0px; }
   .container { width: 100%; padding: 0px; }
