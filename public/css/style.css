@@ -2,6 +2,9 @@
 
 <<<<<<< HEAD
 =======
+
+>>>>>>> origin/Development
+
 @font-face {
   font-family: 'Questrial';
   src: 
@@ -9,7 +12,6 @@
 		url('Questrial-Regular.ttf');
 }
 
->>>>>>> origin/Development
 html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
 
 
@@ -81,7 +83,12 @@ input::-moz-focus-inner {   border: 0; }
   padding: 5px;
   margin-left: 15px;
 }
-
+.navbar-toggle {
+  border: none; 
+}
+.navbar {
+  border: none;
+}
 /* Content Boxes */
 #topHeader {
   color: #444444;
@@ -108,6 +115,18 @@ input::-moz-focus-inner {   border: 0; }
   font-size: 1.5em;
 }
 
+.col-md-6 { 
+  margin-top: 40px; 
+  width: auto; 
+
+}
+
+/* Social Media Icons */
+.icon-facebook:hover{ color: #CC181E; cursor: pointer; }
+.icon-twitter:hover{ color: #CC181E; cursor: pointer; }
+.icon-steam:hover{ color: #CC181E; cursor: pointer; }
+.icon-twitch:hover{ color: #CC181E; cursor: pointer; }
+.icon-youtube-play:hover{ color: #CC181E; cursor: pointer; }
 
 /** Media Queries **/
 @media screen and (min-width: 768px){
@@ -122,7 +141,8 @@ input::-moz-focus-inner {   border: 0; }
 @media all and (max-width: 767px){
   #header { margin: 0; }
   .navbar { margin: 0; }
-  .navbar-default { margin: 0px; }
+  .navbar ul li a { padding-left: 50px; }
+  .navbar-default { margin: 0px; border-radius: 0px!important;}
   .panelLeft { width: 100%; padding: 0px; margin: 0px; }
   .container { width: 100%; padding: 0px; }
   .panelRightUp {
