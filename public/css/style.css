@@ -120,6 +120,11 @@ input::-moz-focus-inner {   border: 0; }
 
 }
 
+.teamSpeakOverViewButton { width: 50%; float: left; background-color: #2F2F2F; color: #FFFFFF; }
+.teamSpeakOverViewButton:hover { background-color: #444444; }
+.TwitterButton { width: 50%; float: left; text-align: right; background-color: #2F2F2F; color: #FFFFFF; }
+.TwitterButton:hover { background-color: #444444; }
+
 /* Social Media Icons */
 .icon-facebook:hover{ color: #CC181E; cursor: pointer; }
 .icon-twitter:hover{ color: #CC181E; cursor: pointer; }
