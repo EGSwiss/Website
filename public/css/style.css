@@ -1,5 +1,6 @@
 /* Custom CSS in here */
 
+
 @font-face {
   font-family: 'Questrial';
   src: 
@@ -78,11 +79,15 @@ input::-moz-focus-inner {   border: 0; }
   padding: 5px;
   margin-left: 15px;
 }
-
+.navbar-toggle {
+  border: none; 
+}
+.navbar {
+  border: none;
+}
 /* Content Boxes */
 #topHeader {
-  color: #444444;
-  background-color: #2F2F2F;
+  background-color: #444444;
   padding: 8px;
   font-size: 1.2em;
 }
@@ -105,6 +110,23 @@ input::-moz-focus-inner {   border: 0; }
   font-size: 1.5em;
 }
 
+.col-md-6 { 
+  margin-top: 40px; 
+  width: auto; 
+
+}
+
+.teamSpeakOverViewButton { width: 50%; float: left; background-color: #2F2F2F; color: #FFFFFF; }
+.teamSpeakOverViewButton:hover { background-color: #444444; }
+.TwitterButton { width: 50%; float: left; text-align: right; background-color: #2F2F2F; color: #FFFFFF; }
+.TwitterButton:hover { background-color: #444444; }
+
+/* Social Media Icons */
+.icon-facebook:hover{ color: #CC181E; cursor: pointer; }
+.icon-twitter:hover{ color: #CC181E; cursor: pointer; }
+.icon-steam:hover{ color: #CC181E; cursor: pointer; }
+.icon-twitch:hover{ color: #CC181E; cursor: pointer; }
+.icon-youtube-play:hover{ color: #CC181E; cursor: pointer; }
 
 /** Media Queries **/
 @media screen and (min-width: 768px){
@@ -119,7 +141,8 @@ input::-moz-focus-inner {   border: 0; }
 @media all and (max-width: 767px){
   #header { margin: 0; }
   .navbar { margin: 0; }
-  .navbar-default { margin: 0px; }
+  .navbar ul li a { padding-left: 50px; }
+  .navbar-default { margin: 0px; border-radius: 0px!important;}
   .panelLeft { width: 100%; padding: 0px; margin: 0px; }
   .container { width: 100%; padding: 0px; }
   .panelRightUp {
@@ -128,9 +151,15 @@ input::-moz-focus-inner {   border: 0; }
     width: 45%;
   }
   .panelRightDown {
-    margin: 2.5%;
-    float: left;
-    width: 45%;
+    margin: 0;
+	padding: 0;
+    width: 100%;
+  }
+  .panelRightUp {
+	width: 100%; 
+	margin: 0;
+	padding: 0;
+	
   }
   .clear {
     clear: both;
