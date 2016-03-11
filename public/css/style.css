@@ -127,6 +127,11 @@ input::-moz-focus-inner {   border: 0; }
 .icon-steam:hover{ color: #CC181E; cursor: pointer; }
 .icon-twitch:hover{ color: #CC181E; cursor: pointer; }
 .icon-youtube-play:hover{ color: #CC181E; cursor: pointer; }
+.socialNetworkElement { margin:50px 0; }
+
+div.panelLeft div div div div a:link {
+  color: black;
+}
 
 /** Media Queries **/
 @media screen and (min-width: 768px){
