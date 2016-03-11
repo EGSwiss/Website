@@ -10,6 +10,7 @@
 		<meta name="author" content="metatags generator">
 		<meta name="robots" content="index, follow">
 		<meta name="revisit-after" content="7 days">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 
 		<link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
 
@@ -54,43 +55,30 @@
 	              <li id="navigationItem-home"><a ui-sref="home">Home</a></li>
 	              <li id="navigationItem-games"><a ui-sref="games">Games</a></li>
 	              <li id="navigationItem-socialNetwork"><a ui-sref="socialNetwork">Social Network</a></li>
-							  <li id="navigationItem-team"><a ui-sref="team">Team</a></li>
-							  <li id="navigationItem-contact"><a ui-sref="contact">Kontakt</a></li>
+				  <li id="navigationItem-team"><a ui-sref="team">Team</a></li>
+				  <li id="navigationItem-contact"><a ui-sref="contact">Kontakt</a></li>
 	            </ul>
 	          </div>
 	        </div>
 	      </nav>
-
-
-				<div ng-controller="mainController" id="mainContent" class="content">
-
-					<div ui-view>
-
-						<!-- NG-VIEW -->
-
+			<div ng-controller="mainController" id="mainContent" class="content">
+				<div ui-view></div>
+				<div class="clear"></div>
+				<div class="panelRightUp panel panel-default">
+				  <div class="panel-body">
+					<h2>TeamSpeak IP</h2>
+					<div id="panelRightUpContent">
+						ts.egswiss.ch:6000
 					</div>
-
-					<div class="clear"></div>
-				  <div class="panelRightUp panel panel-default">
-					  <div class="panel-body">
-						TeamSpeak IP
-						<div id="panelRightUpContent">
-							ts.egswiss.ch:6000
-						</div>
-					  </div>
 				  </div>
-
-				  <div class="panelRightDown panel panel-default" data-toggle="collapse" href="#teamspeakOverview">
-					  <div class="panel-body">
-						  <iframe id="teamspeakOverview" allowtransparency="true" src="https://ts.egswiss.ch/tsviewpub.php?skey=0&sid=1&showicons=right&bgcolor=ffffff&fontcolor=000000" style="height:100%;width:100%" scrolling="auto" frameborder="0">Your Browser will not show Iframes</iframe>
-
-					  </div>
-					  <div class="panel-body TwitterButton">
-						Twitter Feed
-					  </div>
 				</div>
-
-	    </div>
+				<div class="panelRightDown panel panel-default" data-toggle="collapse" href="#teamspeakOverview">
+					<div class="panel-body">
+						<h2>Overwiew</h2>
+						<iframe id="teamspeakOverview" allowtransparency="true" src="https://ts.egswiss.ch/tsviewpub.php?skey=0&sid=1&showicons=right&bgcolor=ffffff&fontcolor=000000" scrolling="auto" frameborder="0">Your Browser will not show Iframes</iframe>
+					</div>
+				</div>
+			</div>
 			<div id="scripts">
 				<script src="./lib/JQuery/js/jquery-1.11.3.min.js"></script>
 		    	<script src="./lib/Bootstrap/js/bootstrap.min.js"></script>
