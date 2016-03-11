@@ -139,17 +139,47 @@ input::-moz-focus-inner {   border: 0; }
 
 /* KLEINER ALS 767 dann wird das gemacht:  */
 @media all and (max-width: 767px){
-  #header { margin: 0; }
-  .navbar { margin: 0; }
-  .navbar ul li a { padding-left: 50px; }
-  .navbar-default { margin: 0px; border-radius: 0px!important;}
-  .panelLeft { width: 100%; padding: 0px; margin: 0px; }
-  .container { width: 100%; padding: 0px; }
+  #header {
+    margin: 0;
+  }
+
+  .navbar {
+    margin: 0;
+  }
+
+  .navbar ul li a {
+    padding-left: 50px;
+  }
+
+  .navbar-default {
+    margin: 0px;
+    border-radius: 0px!important;
+  }
+  .panelLeft {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0px;
+  }
+
   .panelRightUp {
     margin: 2.5%;
     float: left;
     width: 45%;
   }
+
+  .panel-body iframe {
+    height: 1000px;
+  }
+
+  .panel {
+    margin-bottom: 10px !important;
+  }
+
   .panelRightDown {
     margin: 0;
 	padding: 0;
@@ -160,6 +190,15 @@ input::-moz-focus-inner {   border: 0; }
 	margin: 0;
 	padding: 0;
 	
+  }
+  .navbar-toggle {
+    background-color: #FFF;
+  }
+  .icon-bar {
+    background-color: #CC181E !important;
+  }
+
+  .navbar .navbar-default {
   }
   .clear {
     clear: both;
