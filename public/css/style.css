@@ -115,10 +115,45 @@ input::-moz-focus-inner {   border: 0; }
   font-size: 1.5em;
 }
 
-.col-md-6 { 
-  margin-top: 40px; 
+.col-md-6 {
+  margin-top: 40px;
   width: auto; 
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #CC181E;
+  color: white;
 }
 
 .teamSpeakOverViewButton { width: 50%; float: left; background-color: #2F2F2F; color: #FFFFFF; }
@@ -133,9 +168,23 @@ input::-moz-focus-inner {   border: 0; }
 .icon-twitch:hover{ color: #CC181E; cursor: pointer; }
 .icon-youtube-play:hover{ color: #CC181E; cursor: pointer; }
 .socialNetworkElement { margin:50px 0; }
+.socialNetworkElement div.col-md-10 { margin:20px 0; }
 
 div.panelLeft div div div div a:link {
-  color: black;
+  color: #828282;
+  text-decoration:none;
+}
+div.panelLeft div div div div a:hover {
+  color: #828282;
+  text-decoration:none;
+}
+div.panelLeft div div div div a:active {
+  color: #828282;
+  text-decoration:none;
+}
+div.panelLeft div div div div a:visited {
+  color: #828282;
+  text-decoration:none;
 }
 
 /** Media Queries **/
