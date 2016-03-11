@@ -50,3 +50,18 @@ var egswiss = angular.module('egswiss', ['ui.router', "home", "games", "contact"
             $(val).addClass("active");
        });
    });
+
+  egswiss.controller('MainController', function ($scope) {
+      if ($(window)[0].innerWidth > 767) {
+          $('#teamspeakOverview').parent().parent().removeAttr('data-toggle');
+          console.log("grösser");
+      }
+
+      $(window).resize(function(event){
+          if (event.currentTarget.innerWidth > 767) {
+              $('#teamspeakOverview').parent().parent().removeAttr('data-toggle');
+          } else {
+              $('#teamspeakOverview').parent().parent().attr('data-toggle', 'collapse');
+          }
+      });
+  });

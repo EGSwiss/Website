@@ -41,6 +41,11 @@ input::-moz-focus-inner {   border: 0; }
   width: 150px;
 }
 
+.panel-body iframe {
+  width: 100%;
+  height: 450px;
+}
+
 .game {
   text-align: center;
   padding:20px;
@@ -139,7 +144,7 @@ div.panelLeft div div div div a:link {
   .header { display: block; }
   .panelLeft { min-height: 700px; }
   .panelRightUp { min-height: 100px; }
-  .panelRightDown {  min-height: 580px; }
+  .panelRightDown {  min-height: 555px; }
 }
 
 /* KLEINER ALS 767 dann wird das gemacht:  */
