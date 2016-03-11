@@ -93,16 +93,16 @@ input::-moz-focus-inner {   border: 0; }
 }
 
 .panelLeft {
-  width: 70%;
+  width: 65%;
   float: left;
 }
 .panelRightUp {
-  width: 29%;
+  width: 33%;
   float: right;
 }
 
 .panelRightDown {
-  width: 29%;
+  width: 33%;
   float: right;
 }
 
