@@ -12,7 +12,7 @@ html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
 
 
 .header { margin: 15px 0; display: none; }
-.container { padding-top: 50px; width: 90%; }
+.container { width: 90%; }
 
 input::-moz-focus-inner {   border: 0; }
 #topHeader a:link {
