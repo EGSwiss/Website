@@ -40,12 +40,17 @@ input::-moz-focus-inner {   border: 0; }
   height: 150px;
   width: 150px;
 }
+.row {
+  margin: 0;
+}
 
 .panel-body iframe {
   width: 100%;
   height: 450px;
 }
-
+.panel-body {
+  margin-right:15px;
+}
 .game {
   text-align: center;
   padding:20px;
@@ -123,15 +128,27 @@ input::-moz-focus-inner {   border: 0; }
 
 
 
+label {
+  padding: 20px 0px 0px 0px !important;
+}
+#submitContactForm {
+  background-color:#CC181E;
+  color: #Fff;
+  border: #CC181E;
+  border-radius: 5px;
+  padding: 7px;
+  float: right;
+}
+input, textarea {
+  resize:vertical;
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 
-
-
-
-
-
-
-
-
+}
 
 
 
