@@ -1,6 +1,5 @@
 /* Custom CSS in here */
 
-
 @font-face {
   font-family: 'Questrial';
   src: 
@@ -9,7 +8,6 @@
 }
 
 html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
-
 
 .header { margin: 15px 0; display: none; }
 .container { width: 90%; }
@@ -122,11 +120,8 @@ input::-moz-focus-inner {   border: 0; }
 
 .col-md-6 {
   margin-top: 40px;
-  width: auto; 
-
+  width: auto;
 }
-
-
 
 label {
   padding: 20px 0px 0px 0px !important;
@@ -149,12 +144,6 @@ input, textarea {
   box-sizing: border-box;
 
 }
-
-
-
-
-
-
 
 table {
   border-collapse: collapse;
