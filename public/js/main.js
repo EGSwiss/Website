@@ -1,9 +1,8 @@
 var egswiss = angular.module('egswiss', ['ui.router', "home", "games", "contact", "socialNetwork", "team"]);
 
   // configure our routes
-  egswiss.config(function($stateProvider, $urlRouterProvider) {
-
-    $urlRouterProvider.otherwise("/");
+  egswiss.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+      $urlRouterProvider.otherwise("/");
     $stateProvider
         .state('home', {
           label: "EG Swiss",
@@ -40,8 +39,6 @@ var egswiss = angular.module('egswiss', ['ui.router', "home", "games", "contact"
 
   egswiss.run(function ($rootScope, $window) {
        $rootScope.$on("$stateChangeSuccess", function (event, state) {
-           $window.document.title = state.label;
-
             var currentState = state.name.split(".")[0];
             var val = "#navigationItem-" + currentState;
             $("#navbar ul li").each(function(li){
@@ -54,7 +51,6 @@ var egswiss = angular.module('egswiss', ['ui.router', "home", "games", "contact"
   egswiss.controller('MainController', function ($scope) {
       if ($(window)[0].innerWidth > 767) {
           $('#teamspeakOverview').parent().parent().removeAttr('data-toggle');
-          console.log("grösser");
       }
 
       $(window).resize(function(event){
