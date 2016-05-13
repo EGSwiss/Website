@@ -1,8 +1,12 @@
 var egswiss = angular.module('contact', []);
 
-// create the controller and inject Angular's $scope
 egswiss.controller('contactController', function($scope) {
-    // create a message to display in our view
-    $scope.message = 'Look! I am an about page.';
+    $scope.emailRegex = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
+    $scope.submit = function () {
+    };
+
+    $scope.validate = function (fieldName) {
+        return $scope.contactForm[fieldName].$dirty && $scope.contactForm[fieldName].$invalid;
+    };
 });

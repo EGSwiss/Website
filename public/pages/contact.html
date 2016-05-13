@@ -2,23 +2,51 @@
   <div class="panel-body">
 
 <h1>Kontakt</h1>
+      <p>Bei Anliegen liegt Ihr hier genau richtig.</p>
+      <form name="contactForm">
+          <div class="row" ng-class="{'has-error': validate('email')}">
+              <label class="col-md-3 col-sm-12 requiredSymbol">Ihre E-Mail Adresse: </label>
+              <input ng-model="email" class="form-control" name="email"
+                     ng-pattern="emailRegex" class="col-md-9 col-sm-12" required>
+              <span ng-if="contactForm.email.$dirty && contactForm.email.$error.required"
+                    ng-class="{'red': contactForm.email.$dirty
+                    && contactForm.email.$error.required}">Dieses Feld muss ausgefüllt werden.</span>
+              <span ng-if="contactForm.email.$dirty && contactForm.email.$error.pattern"
+                    ng-class="{'red': contactForm.email.$error.pattern}">
+                    Bitte geben Sie eine Emailadresse an.</span>
+          </div>
+          <div class="row" ng-class="{'has-error': validate('username')}">
+              <label class="col-md-3 col-sm-12 requiredSymbol">Ihr Name: </label>
+              <input ng-model="username" class="form-control" name="username"
+                     class="col-md-9 col-sm-12" required maxlength="16"
+                     minlength="4">
+              <span ng-if="contactForm.username.$dirty && contactForm.username.$error.required"
+                    ng-class="{'red': contactForm.username.$dirty}">
+                    Dieses Feld muss ausgefüllt werden.<br/></span>
+              <span ng-if="contactForm.username.$dirty && (contactForm.username.$error.maxlength ||
+                    contactForm.username.$error.minlength)"
+                    ng-class="{'red': contactForm.username.$dirty}">
+                    Ihr Name muss mehr als 3 und weniger als 16 Zeichen enhalten.</span>
+          </div>
+          <div class="row" ng-class="{'has-error': validate('message')}">
+              <label class="col-md-3 col-sm-12 requiredSymbol">Ihr Anliegen: </label>
+              <textarea ng-model="message" class="form-control" name="message"
+                        class="col-md-9 col-sm-12" required maxlength="400"
+                        minlength="20"></textarea>
+              <span ng-if="contactForm.message.$dirty && contactForm.message.$error.required"
+                    ng-class="{'red': contactForm.message.$dirty}">
+                    Dieses Feld muss ausgefüllt werden.<br/></span>
+              <span ng-if="contactForm.message.$dirty && (contactForm.message.$error.maxlength ||
+                    contactForm.message.$error.minlength)"
+                    ng-class="{'red': contactForm.message.$dirty}">
+                    Ihr Name muss mehr als 20 und weniger als 400 Zeichen enhalten.</span>
+          </div>
 
-    <p>Bei Anliegen liegt Ihr hier genau richtig. </p>
+          <button id="submitContactForm" type="button" ng-click="submit()">Abschicken</button>
 
-      <div class="row">
-          <label class="col-md-3 col-sm-12">Deine E-Mail Adresse: </label>
-          <input class="col-md-9 col-sm-12">
-      </div>
-      <div class="row">
-          <label class="col-md-3 col-sm-12">Dein Name: </label>
-          <input class="col-md-9 col-sm-12">
-      </div>
-      <div class="row">
-          <label class="col-md-3 col-sm-12">Dein Anliegen: </label>
-          <textarea class="col-md-9 col-sm-12"></textarea>
-      </div>
-
-      <button id="submitContactForm" type="button" action="mailto:'info@egswiss.ch'">Abschicken</button>
-
+          <p>
+              <i>Felder mit * markiert, müssen ausgefüllt werden.</i>
+          </p>
+      </form>
   </div>
 </div>

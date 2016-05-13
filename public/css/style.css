@@ -59,6 +59,11 @@ input::-moz-focus-inner {   border: 0; }
 .panel-body {
   margin-right:15px;
 }
+
+.requiredSymbol::before {
+  content: "* ";
+}
+
 .game {
   text-align: center;
   padding:20px;
@@ -133,6 +138,10 @@ input::-moz-focus-inner {   border: 0; }
   width: auto;
 }
 
+.red {
+  color: #CC181E;
+}
+
 label {
   padding: 20px 0px 0px 0px !important;
 }
@@ -145,13 +154,14 @@ label {
   float: right;
 }
 input, textarea {
-  resize:vertical;
+  resize: vertical;
   width: 100%;
-  padding: 12px;
+  padding: 12px !important;
   margin: 8px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  height: auto !important;
 }
 
 table {
@@ -209,6 +219,12 @@ div.panelLeft div div div div a:visited {
   .panelLeft { min-height: 700px; }
   .panelRightUp { min-height: 100px; }
   .panelRightDown {  min-height: 555px; }
+}
+
+@media all and (max-width: 847px){
+  .headerTitle h1 {
+    font-size: 29px;
+  }
 }
 
 /* KLEINER ALS 767 dann wird das gemacht:  */
