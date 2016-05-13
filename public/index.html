@@ -22,7 +22,6 @@
 	<body ng-app="egswiss">
 
 			<div id="topHeader">
-				<a href="http://forum.egswiss.ch">Anmelden</a>
 			</div>
 
       <div class="container">
@@ -54,12 +53,12 @@
 	          </div>
 	          <div id="navbar" class="navbar-collapse collapse">
 	            <ul class="nav navbar-nav">
-	              <li id="navigationItem-home"><a ui-sref="home">Home</a></li>
-	              <li id="navigationItem-games"><a ui-sref="games">Games</a></li>
-	              <li id="navigationItem-socialNetwork"><a ui-sref="socialNetwork">Social Network</a></li>
-				  <li id="navigationItem-team"><a ui-sref="team">Team</a></li>
-				  <li id="navigationItem-contact"><a ui-sref="contact">Kontakt</a></li>
-				  <li id="navigationItem-forum"><a href="http://forum.egswiss.ch">Forum</a></li>
+	              <li ng-class="{'active': currentState === 'home'}"><a ui-sref="home">Home</a></li>
+	              <li ng-class="{'active': currentState === 'games'}"><a ui-sref="games">Games</a></li>
+	              <li ng-class="{'active': currentState === 'socialNetwork'}"><a ui-sref="socialNetwork">Social Network</a></li>
+				  <li ng-class="{'active': currentState === 'team'}"><a ui-sref="team">Team</a></li>
+				  <li ng-class="{'active': currentState === 'contact'}"><a ui-sref="contact">Kontakt</a></li>
+				  <li><a href="http://forum.egswiss.ch">Forum</a></li>
 	            </ul>
 	          </div>
 	        </div>
