@@ -9,6 +9,16 @@
 
 html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
 
+
+.headerLogo {
+  display: inline-block;
+}
+
+.headerTitle {
+  display: inline-block;
+  margin-left: 2.5%;
+}
+
 .header { margin: 15px 0; display: none; }
 .container { width: 90%; }
 
@@ -142,7 +152,6 @@ input, textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-
 }
 
 table {
