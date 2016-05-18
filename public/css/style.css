@@ -1,115 +1,349 @@
-/* Custom CSS in here */
-@import url(https://fonts.googleapis.com/css?family=Questrial);
-html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
+/* EGSwiss */
+/* Version 0.2 */
 
-.header { margin: 15px 0; display: none; }
-.container { padding-top: 50px; width: 90%; }
-
-#topHeader a:link {
-    color: #FFF !important;
-    text-decoration: underline !important;
-}
-#topHeader a:visited {
-    color: #FFF !important;
-    text-decoration: underline !important;
-}
-#topHeader a:hover {
-    color: #FFF !important;
-    text-decoration: underline !important;
-    font-weight: bold;
-}
-#topHeader a:active {
-    color: #FFF !important;
-    text-decoration: underline !important;
+@font-face {
+  font-family: 'Questrial';
+  src:  local('Questrial');
+        url('Questrial-Regular.ttf');
 }
 
-/* Gray line over the menu so it looks like on the EGS forum. */
-.grayLine { width: 100%; background-color: #444444; height: 5px; }
+html, body {
+  background-color: #F1F1F1;
+  font-family: 'Questrial', sans-serif;
+}
 
-#navbar { padding-left: 0px; }
-#navbar li:hover { background-color: #444444 !important; }
+input::-moz-focus-inner {
+  border: 0;
+}
+
+label {
+  padding: 20px 0px 0px 0px !important;
+}
+
+input, textarea {
+  resize: vertical;
+  width: 100%;
+  padding: 12px !important;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: auto !important;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){
+  background-color: #f2f2f2
+}
+
+th {
+  background-color: #CC181E;
+  color: white;
+}
+
+div.panelLeft div div div div a:link,
+div.panelLeft div div div div a:hover,
+div.panelLeft div div div div a:active,
+div.panelLeft div div div div a:visited{
+  color: #828282;
+  text-decoration:none;
+}
+
+/*****************/
+
+.headerLogo {
+  display: inline-block;
+}
+
+.headerTitle {
+  display: inline-block;
+  margin-left: 2.5%;
+}
+
+.header {
+  margin: 15px 0;
+  display: none;
+}
+
+.container {
+  width: 90%;
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+}
+
+.row {
+  margin: 0;
+}
+
+.panel-body iframe {
+  width: 100%;
+  height: 450px;
+}
+
+.panel-body {
+  margin-right:15px;
+}
+
+.requiredSymbol::before {
+  content: "* ";
+}
+
+.game {
+  text-align: center;
+  padding:20px;
+}
+
+.grayLine {
+  width: 100%;
+  background-color: #444444;
+  height: 5px;
+}
+
 .navbar-default {
   background-image: none;
   background-color: #2F2F2F;
-  border-radius: none;
+  border-radius: 0;
   box-shadow: none;
 }
+
 .navbar-default .container-fluid {
   padding-left: 0px;
 }
+
 .navbar-default a {
   color: #FFFFFF !important;
 }
+
 .navbar-default .active {
   background-color: #CC181E !important;
 }
+
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
   background-color: #CC181E; color: #fff;
 }
+
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
   background-image: none;
 }
+
 .navbar-brand  img {
   width: 115px;
 }
+
 .navbar-brand {
   height: auto;
   padding: 5px;
   margin-left: 15px;
 }
 
-/* Content Boxes */
-#topHeader {
-  color: #FFF;
-  background-color: #2F2F2F;
-  padding: 8px;
-  font-size: 1.2em;
+.navbar-toggle {
+  border: none; 
+}
+
+.navbar {
+  border: none;
 }
 
 .panelLeft {
-  width: 70%;
+  width: 65%;
   float: left;
 }
-.panelRightUp {
-  width: 29%;
+
+.panelRightUp, .panelRightDown {
+  width: 33%;
   float: right;
 }
 
-.panelRightDown {
-  width: 29%;
-  float: right;
+.col-md-6 {
+  margin-top: 40px;
+  width: auto;
+}
+
+.red {
+  color: #CC181E;
+}
+
+.teamSpeakOverViewButton {
+  width: 50%;
+  float: left;
+  background-color: #2F2F2F;
+  color: #FFFFFF;
+}
+
+.teamSpeakOverViewButton:hover {
+  background-color: #444444;
+}
+
+.TwitterButton {
+  width: 50%;
+  float: left;
+  text-align: right;
+  background-color: #2F2F2F;
+  color: #FFFFFF;
+}
+
+.TwitterButton:hover {
+  background-color: #444444;
+}
+
+.icon-facebook:hover, .icon-twitter:hover, .icon-steam:hover,
+.icon-twitch:hover, .icon-youtube-play:hover {
+  color: #CC181E;
+  cursor: pointer;
+}
+
+.socialNetworkElement {
+  margin: 50px 0;
+}
+
+.socialNetworkElement div.col-md-10 {
+  margin: 20px 0;
+}
+
+/*****************/
+
+#navbar {
+  padding-left: 0;
+}
+
+#navbar li:hover {
+  background-color: #444444 !important;
+}
+
+#topHeader {
+  background-color: #444444;
+  padding: 8px;
+  font-size: 1.2em;
 }
 
 #panelRightUpContent {
   font-size: 1.5em;
 }
 
-/** Media Queries **/
-@media screen and (min-width: 768px){
-  .navbar-brand { display: none !important; }
-  .header { display: block; }
-  .panelLeft { min-height: 700px; }
-  .panelRightUp { min-height: 100px; }
-  .panelRightDown {  min-height: 580px; }
+#submitContactForm {
+  background-color:#CC181E;
+  color: #Fff;
+  border: #CC181E;
+  border-radius: 5px;
+  padding: 7px;
+  float: right;
 }
 
-/* KLEINER ALS 767 dann wird das gemacht:  */
+#topHeader a:link, #topHeader a:visited, #topHeader a:active {
+  color: #FFF !important;
+  text-decoration: underline !important;
+  outline:0;
+}
+
+#topHeader a:hover {
+  color: #FFF !important;
+  text-decoration: underline !important;
+  font-weight: bold;
+  outline: 0;
+}
+
+/*****************/
+
+@media screen and (min-width: 768px) {
+  .navbar-brand {
+    display: none !important;
+  }
+
+  .header {
+    display: block;
+  }
+
+  .panelLeft {
+    min-height: 700px;
+  }
+
+  .panelRightUp {
+    min-height: 100px;
+  }
+
+  .panelRightDown {
+    min-height: 555px;
+  }
+}
+
+@media all and (max-width: 847px) {
+  .headerTitle h1 {
+    font-size: 29px;
+  }
+}
+
 @media all and (max-width: 767px){
-  #header { margin: 0px !impoartnat; }
-  .navbar { margin: 0px; }
-  .navbar-default { margin: 0px; }
-  .panelLeft { width: 100%; padding: 0px; margin: 0px; }
-  .container { width: 100%; padding: 0px; }
+  #header {
+    margin: 0;
+  }
+
+  .navbar {
+    margin: 0;
+  }
+
+  .navbar ul li a {
+    padding-left: 50px;
+  }
+
+  .navbar-default {
+    margin: 0px;
+    border-radius: 0px!important;
+  }
+  .panelLeft {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0px;
+  }
+
   .panelRightUp {
     margin: 2.5%;
     float: left;
     width: 45%;
   }
-  .panelRightDown {
-    margin: 2.5%;
-    float: left;
-    width: 45%;
+
+  .panel-body iframe {
+    height: 1000px;
   }
+
+  .panel {
+    margin-bottom: 10px !important;
+  }
+
+  .panelRightDown {
+    margin: 0;
+	padding: 0;
+    width: 100%;
+  }
+  .panelRightUp {
+	width: 100%; 
+	margin: 0;
+	padding: 0;
+	
+  }
+  .navbar-toggle {
+    background-color: #FFF;
+  }
+  .icon-bar {
+    background-color: #CC181E !important;
+  }
+
   .clear {
     clear: both;
   }
