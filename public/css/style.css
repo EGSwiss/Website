@@ -1,158 +1,25 @@
-/* Custom CSS in here */
+/* EGSwiss */
+/* Version 0.2 */
 
 @font-face {
   font-family: 'Questrial';
-  src: 
-		local('Questrial');
-		url('Questrial-Regular.ttf');
+  src:  local('Questrial');
+url('Questrial-Regular.ttf');
 }
 
-html, body{ background-color: #F1F1F1; font-family: 'Questrial', sans-serif;}
-
-
-.headerLogo {
-  display: inline-block;
+html, body {
+  background-color: #F1F1F1;
+  font-family: 'Questrial', sans-serif;
 }
 
-.headerTitle {
-  display: inline-block;
-  margin-left: 2.5%;
-}
-
-.header { margin: 15px 0; display: none; }
-.container { width: 90%; }
-
-input::-moz-focus-inner {   border: 0; }
-#topHeader a:link {
-    color: #FFF !important;
-    text-decoration: underline !important;
-  outline:0;
-}
-#topHeader a:visited {
-    color: #FFF !important;
-    text-decoration: underline !important;
-  outline:0;
-}
-#topHeader a:hover {
-    color: #FFF !important;
-    text-decoration: underline !important;
-    font-weight: bold;
-  outline:0;
-}
-#topHeader a:active {
-    color: #FFF !important;
-    text-decoration: underline !important;
-  outline:0;
-}
-.image {
-  height: 150px;
-  width: 150px;
-}
-.row {
-  margin: 0;
-}
-
-.panel-body iframe {
-  width: 100%;
-  height: 450px;
-}
-.panel-body {
-  margin-right:15px;
-}
-
-.requiredSymbol::before {
-  content: "* ";
-}
-
-.game {
-  text-align: center;
-  padding:20px;
-}
-/* Gray line over the menu so it looks like on the EGS forum. */
-.grayLine { width: 100%; background-color: #444444; height: 5px; }
-
-#navbar { padding-left: 0px; }
-#navbar li:hover { background-color: #444444 !important; }
-.navbar-default {
-  background-image: none;
-  background-color: #2F2F2F;
-  border-radius: none;
-  box-shadow: none;
-}
-.navbar-default .container-fluid {
-  padding-left: 0px;
-}
-.navbar-default a {
-  color: #FFFFFF !important;
-}
-.navbar-default .active {
-  background-color: #CC181E !important;
-}
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-  background-color: #CC181E; color: #fff;
-}
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
-  background-image: none;
-}
-.navbar-brand  img {
-  width: 115px;
-}
-.navbar-brand {
-  height: auto;
-  padding: 5px;
-  margin-left: 15px;
-}
-.navbar-toggle {
-  border: none; 
-}
-.navbar {
-  border: none;
-}
-/* Content Boxes */
-#topHeader {
-  background-color: #444444;
-  padding: 8px;
-  font-size: 1.2em;
-}
-
-.panelLeft {
-  width: 65%;
-  float: left;
-}
-.panelRightUp {
-  width: 33%;
-  float: right;
-}
-
-.panelRightDown {
-  width: 33%;
-  float: right;
-}
-
-#panelRightUpContent {
-  font-size: 1.5em;
-}
-
-.col-md-6 {
-  margin-top: 40px;
-  width: auto;
-}
-
-.red {
-  color: #CC181E;
+input::-moz-focus-inner {
+  border: 0;
 }
 
 label {
   padding: 20px 0px 0px 0px !important;
 }
-#submitContactForm {
-  background-color:#CC181E;
-  color: #Fff;
-  border: #CC181E;
-  border-radius: 5px;
-  padding: 7px;
-  float: right;
-}
+
 input, textarea {
   resize: vertical;
   width: 100%;
@@ -174,60 +41,249 @@ th, td {
   padding: 8px;
 }
 
-tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(even){
+  background-color: #f2f2f2
+}
 
 th {
   background-color: #CC181E;
   color: white;
 }
 
-.teamSpeakOverViewButton { width: 50%; float: left; background-color: #2F2F2F; color: #FFFFFF; }
-.teamSpeakOverViewButton:hover { background-color: #444444; }
-.TwitterButton { width: 50%; float: left; text-align: right; background-color: #2F2F2F; color: #FFFFFF; }
-.TwitterButton:hover { background-color: #444444; }
-
-/* Social Media Icons */
-.icon-facebook:hover{ color: #CC181E; cursor: pointer; }
-.icon-twitter:hover{ color: #CC181E; cursor: pointer; }
-.icon-steam:hover{ color: #CC181E; cursor: pointer; }
-.icon-twitch:hover{ color: #CC181E; cursor: pointer; }
-.icon-youtube-play:hover{ color: #CC181E; cursor: pointer; }
-.socialNetworkElement { margin:50px 0; }
-.socialNetworkElement div.col-md-10 { margin:20px 0; }
-
-div.panelLeft div div div div a:link {
-  color: #828282;
-  text-decoration:none;
-}
-div.panelLeft div div div div a:hover {
-  color: #828282;
-  text-decoration:none;
-}
-div.panelLeft div div div div a:active {
-  color: #828282;
-  text-decoration:none;
-}
-div.panelLeft div div div div a:visited {
+div.panelLeft div div div div a:link,
+div.panelLeft div div div div a:hover,
+div.panelLeft div div div div a:active,
+div.panelLeft div div div div a:visited{
   color: #828282;
   text-decoration:none;
 }
 
-/** Media Queries **/
-@media screen and (min-width: 768px){
-  .navbar-brand { display: none !important; }
-  .header { display: block; }
-  .panelLeft { min-height: 700px; }
-  .panelRightUp { min-height: 100px; }
-  .panelRightDown {  min-height: 555px; }
+/*****************/
+
+.headerLogo {
+  display: inline-block;
 }
 
-@media all and (max-width: 847px){
+.headerTitle {
+  display: inline-block;
+  margin-left: 2.5%;
+}
+
+.header {
+  margin: 15px 0;
+  display: none;
+}
+
+.container {
+  width: 90%;
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+}
+
+.row {
+  margin: 0;
+}
+
+.panel-body iframe {
+  width: 100%;
+  height: 450px;
+}
+
+.panel-body {
+  margin-right:15px;
+}
+
+.requiredSymbol::before {
+  content: "* ";
+}
+
+.game {
+  text-align: center;
+  padding:20px;
+}
+
+.grayLine {
+  width: 100%;
+  background-color: #444444;
+  height: 5px;
+}
+
+.navbar-default {
+  background-image: none;
+  background-color: #2F2F2F;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.navbar-default .container-fluid {
+  padding-left: 0px;
+}
+
+.navbar-default a {
+  color: #FFFFFF !important;
+}
+
+.navbar-default .active {
+  background-color: #CC181E !important;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  background-color: #CC181E; color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
+  background-image: none;
+}
+
+.navbar-brand  img {
+  width: 115px;
+}
+
+.navbar-brand {
+  height: auto;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.navbar-toggle {
+  border: none;
+}
+
+.navbar {
+  border: none;
+}
+
+.panelLeft {
+  width: 65%;
+  float: left;
+}
+
+.panelRightUp, .panelRightDown {
+  width: 33%;
+  float: right;
+}
+
+.col-md-6 {
+  margin-top: 40px;
+  width: auto;
+}
+
+.red {
+  color: #CC181E;
+}
+
+.teamSpeakOverViewButton {
+  width: 50%;
+  float: left;
+  background-color: #2F2F2F;
+  color: #FFFFFF;
+}
+
+.teamSpeakOverViewButton:hover {
+  background-color: #444444;
+}
+
+.TwitterButton {
+  width: 50%;
+  float: left;
+  text-align: right;
+  background-color: #2F2F2F;
+  color: #FFFFFF;
+}
+
+.TwitterButton:hover {
+  background-color: #444444;
+}
+
+.icon-facebook:hover, .icon-twitter:hover, .icon-steam:hover,
+.icon-twitch:hover, .icon-youtube-play:hover {
+  color: #CC181E;
+  cursor: pointer;
+}
+
+.socialNetworkElement {
+  margin: 50px 0;
+}
+
+.socialNetworkElement div.col-md-10 {
+  margin: 20px 0;
+}
+
+/*****************/
+
+#navbar {
+  padding-left: 0;
+}
+
+#navbar li:hover {
+  background-color: #444444 !important;
+}
+
+#topHeader {
+  background-color: #444444;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#panelRightUpContent {
+  font-size: 1.5em;
+}
+
+#submitContactForm {
+  background-color:#CC181E;
+  color: #Fff;
+  border: #CC181E;
+  border-radius: 5px;
+  padding: 7px;
+  float: right;
+}
+
+#topHeader a:link, #topHeader a:visited, #topHeader a:active {
+  color: #FFF !important;
+  text-decoration: underline !important;
+  outline:0;
+}
+
+#topHeader a:hover {
+  color: #FFF !important;
+  text-decoration: underline !important;
+  font-weight: bold;
+  outline: 0;
+}
+
+/*****************/
+
+@media screen and (min-width: 768px) {
+  .navbar-brand {
+    display: none !important;
+  }
+
+  .header {
+    display: block;
+  }
+
+  .panelLeft {
+    min-height: 700px;
+  }
+
+  .panelRightUp {
+    min-height: 100px;
+  }
+
+  .panelRightDown {
+    min-height: 555px;
+  }
+}
+
+@media all and (max-width: 847px) {
   .headerTitle h1 {
     font-size: 29px;
   }
 }
 
-/* KLEINER ALS 767 dann wird das gemacht:  */
 @media all and (max-width: 767px){
   #header {
     margin: 0;
@@ -272,14 +328,14 @@ div.panelLeft div div div div a:visited {
 
   .panelRightDown {
     margin: 0;
-	padding: 0;
+    padding: 0;
     width: 100%;
   }
   .panelRightUp {
-	width: 100%; 
-	margin: 0;
-	padding: 0;
-	
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
   }
   .navbar-toggle {
     background-color: #FFF;
@@ -288,8 +344,6 @@ div.panelLeft div div div div a:visited {
     background-color: #CC181E !important;
   }
 
-  .navbar .navbar-default {
-  }
   .clear {
     clear: both;
   }
